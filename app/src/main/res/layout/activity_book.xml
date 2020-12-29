@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="org.savan.LibraryUsingSqlite3.BookActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/emptyStar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_empty_star" />
+
+            <ImageView
+                android:id="@+id/filledStar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_filled_star"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="Book Name"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bookImage"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_below="@+id/bookName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/shortDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookImage"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="short description here" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shortDesc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Author name" />
+
+            <TextView
+                android:id="@+id/pages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/author"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Pages" />
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pages"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Language" />
+
+
+            <TextView
+                android:id="@+id/longDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/language"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Long description here" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
